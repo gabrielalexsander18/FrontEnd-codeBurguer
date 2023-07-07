@@ -13,11 +13,13 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 180px;
   }
 `
 
 export const Image = styled.img`
   width: 150px;
+  height: 150px;
   border-radius: 15px;
 `
 

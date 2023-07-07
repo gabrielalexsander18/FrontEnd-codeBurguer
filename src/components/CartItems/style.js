@@ -13,6 +13,7 @@ export const Header = styled.div`
   grid-template-columns: repeat(6, 1fr);
   padding: 10px;
   border-bottom: 1px solid #b5b5b5;
+
   p {
     font-size: 16px;
     color: #b5b5b5;
@@ -23,7 +24,7 @@ export const Body = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   padding: 10px;
-  width: max-content;
+  width: 845px;
   gap: 10px 15px;
 
   img {
@@ -63,6 +64,7 @@ export const Body = styled.div`
       font-size: 24px;
       cursor: pointer;
     }
+
     p {
       margin-top: 5px;
     }
