@@ -14,7 +14,10 @@ export function SideMenuAdmin({ path }) {
   const { logout } = useUser()
   return (
     <Container>
-      <PageLink onClick={() => navigate('/')}>
+      <PageLink
+        onClick={() => navigate('/')}
+        style={{ position: 'fixed', top: '15px' }}
+      >
         <img src={ImgHome} alt="home" />
         <p> Home </p>
       </PageLink>
