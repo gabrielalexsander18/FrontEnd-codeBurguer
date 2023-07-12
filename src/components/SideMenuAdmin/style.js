@@ -39,6 +39,11 @@ export const ListLink = styled(Link)`
 
 export const PageLink = styled.a`
   cursor: pointer;
+  position: fixed;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
   img {
     height: 50px;
