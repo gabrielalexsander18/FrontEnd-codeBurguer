@@ -39,16 +39,19 @@ export const ListLink = styled(Link)`
 
 export const PageLink = styled.a`
   cursor: pointer;
-  font-size: 16px;
-  line-height: 19px;
-  font-style: normal;
-  font-weight: normal;
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 12px;
 
   img {
     height: 50px;
     margin-left: 40px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 12px;
   }
 `
