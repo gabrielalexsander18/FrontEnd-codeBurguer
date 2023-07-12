@@ -1,15 +1,26 @@
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
+import ImgHome from '../../assets/imgHome.png'
 import { useUser } from '../../hooks/UserContext'
 import listLinks from './menu-list'
-import { Container, ItemContainer, ListLink } from './style'
+import { Container, ItemContainer, ListLink, PageLink } from './style'
 
 export function SideMenuAdmin({ path }) {
+  const navigate = useNavigate()
+
   const { logout } = useUser()
   return (
     <Container>
+      <PageLink
+        onClick={() => navigate('/')}
+        style={{ position: 'fixed', top: '15px' }}
+      >
+        <img src={ImgHome} alt="home" />
+      </PageLink>
+
       <hr></hr>
       {listLinks.map(item => (
         <ItemContainer key={item.id} isActive={path === item.link}>

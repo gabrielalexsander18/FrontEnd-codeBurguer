@@ -9,7 +9,7 @@ export const Container = styled.div`
   left: 0;
 
   hr {
-    margin: 70px 15px;
+    margin: 80px 15px;
   }
 `
 
@@ -35,4 +35,13 @@ export const ListLink = styled(Link)`
   color: #ffffff;
   text-decoration: none;
   margin-left: 12px;
+`
+
+export const PageLink = styled.a`
+  cursor: pointer;
+
+  img {
+    height: 50px;
+    margin-left: 40px;
+  }
 `
