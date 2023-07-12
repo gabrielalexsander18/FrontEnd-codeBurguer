@@ -41,7 +41,6 @@ export const PageLink = styled.a`
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 15px;
 
   img {
     height: 50px;
