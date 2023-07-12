@@ -39,11 +39,13 @@ export const ListLink = styled(Link)`
 
 export const PageLink = styled.a`
   cursor: pointer;
-  text-decoration: none;
-  color: ${props => (props.isActive ? '#9758a6' : '#555555')};
   font-size: 16px;
   line-height: 19px;
-  font-weight: ${props => (props.isActive ? 'bold' : 'normal')};
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 12px;
 
   img {
     height: 50px;

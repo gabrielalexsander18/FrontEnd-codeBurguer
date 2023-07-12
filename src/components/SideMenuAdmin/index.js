@@ -18,8 +18,8 @@ export function SideMenuAdmin({ path }) {
         onClick={() => navigate('/')}
         style={{ position: 'fixed', top: '15px' }}
       >
-        <p> Home </p>
         <img src={ImgHome} alt="home" />
+        <p> Home </p>
       </PageLink>
 
       <hr></hr>
