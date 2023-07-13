@@ -57,3 +57,7 @@ export const PageLinkExit = styled.a`
 
   color: #9758a6;
 `
+
+export const PageLinkAdmin = styled.a`
+  text-decoration: none;
+`

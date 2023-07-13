@@ -11,7 +11,8 @@ import {
   ContainerRigth,
   ContainerText,
   Line,
-  PageLinkExit
+  PageLinkExit,
+  PageLinkAdmin
 } from './style'
 
 export function Header() {
@@ -42,9 +43,9 @@ export function Header() {
           <img src={Cart} alt="carrinho" />
         </PageLink>
         <Line></Line>
-        <PageLink>
+        <PageLinkAdmin onClick={() => navigate('/pedidos')}>
           <img src={Person} alt="logo-pessoa" />
-        </PageLink>
+        </PageLinkAdmin>
         <ContainerText>
           <p>ola, {userData.name}</p>
           <PageLinkExit onClick={logoutUser}>Sair</PageLinkExit>
