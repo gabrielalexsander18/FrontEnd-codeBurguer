@@ -76,6 +76,7 @@ export function Products() {
                 setActiveCategory(category.id)
               }}
             >
+              nao sei
               {category.name}
             </CategoryButton>
           ))}

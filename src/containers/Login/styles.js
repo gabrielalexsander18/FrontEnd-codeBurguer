@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import BackgroundImage from '../../assets/background-login.svg'
+import px2vw from '../../utils/px2vw'
 
 export const Container = styled.div`
   height: 100vh;
@@ -13,6 +14,10 @@ export const Container = styled.div`
 
 export const LoginImage = styled.img`
   height: 70%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const ContainerItens = styled.div`
@@ -38,6 +43,29 @@ export const ContainerItens = styled.div`
     display: flex;
     flex-direction: column;
   }
+
+  @media (max-width: 768px) {
+    background: rgba(55, 55, 55, 0.95);
+    border-radius: 10px;
+    height: ${px2vw(1400)};
+
+    h1 {
+      font-size: 45px;
+      line-height: 45px;
+      margin-top: ${px2vw(150)};
+    }
+  }
+
+  @media (max-width: 428px) {
+    padding: 25px 20px;
+    height: ${px2vw(2020)};
+
+    h1 {
+      font-size: 40px;
+      line-height: 40px;
+      margin-top: ${px2vw(20)};
+    }
+  }
 `
 
 export const Label = styled.p`
@@ -48,6 +76,19 @@ export const Label = styled.p`
   color: #ffffff;
   margin-top: 28px;
   margin-bottom: 5px;
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 28px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 428px) {
+    font-size: 23px;
+    line-height: 23px;
+    margin-top: ${px2vw(50)};
+  }
 `
 
 export const Imput = styled.input`
@@ -58,6 +99,17 @@ export const Imput = styled.input`
   border-radius: 5px;
   border: ${props => (props.error ? '2px solid #CC1717' : 'none')};
   padding-left: 10px;
+
+  @media (max-width: 768px) {
+    width: ${px2vw(1050)};
+    height: ${px2vw(90)};
+    padding-left: 17px;
+  }
+
+  @media (max-width: 428px) {
+    width: ${px2vw(1190)};
+    height: ${px2vw(150)};
+  }
 `
 
 export const SignInLink = styled.p`
@@ -70,5 +122,15 @@ export const SignInLink = styled.p`
   a {
     cursor: pointer;
     text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 428px) {
+    font-size: 18.5px;
+    line-height: 18.5px;
   }
 `

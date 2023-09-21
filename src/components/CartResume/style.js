@@ -46,4 +46,39 @@ export const Container = styled.div`
     font-size: 24px;
     margin-top: 50px;
   }
+
+  @media (max-width: 428px) {
+    padding: 25px;
+
+    .container-top {
+      display: grid;
+      grid-gap: 10px 60px;
+      grid-template-areas:
+        'title title'
+        'items items-price'
+        'delivery-tax delivery-tax-price';
+
+      .items {
+        font-size: 20px;
+      }
+
+      .items-price {
+        font-size: 20px;
+      }
+
+      .delivery-tax {
+        font-size: 20px;
+      }
+
+      .delivery-tax-price {
+        font-size: 20px;
+      }
+    }
+
+    .container-botton {
+      font-size: 33px;
+      margin-top: 40px;
+      justify-content: space-evenly;
+    }
+  }
 `

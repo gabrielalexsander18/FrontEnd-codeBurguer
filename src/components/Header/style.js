@@ -8,6 +8,10 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
+
+  @media (max-width: 428px) {
+    height: 62px;
+  }
 `
 
 export const ContainerLeft = styled.div`

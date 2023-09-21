@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const Container = styled.div`
   background: #e5e5e5;
   min-height: calc(100vh - 72px);
+
+  @media (max-width: 428px) {
+    min-height: calc(100vh - 62px);
+  }
 `
 
 export const ProductsImg = styled.img`
@@ -14,6 +18,13 @@ export const CategoriesMenu = styled.div`
   justify-content: center;
   gap: 50px;
   margin-top: 20px;
+
+  @media (max-width: 428px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 17px;
+  }
 `
 
 export const CategoryButton = styled.button`
@@ -34,4 +45,12 @@ export const ProductsContainer = styled.div`
   padding: 40px;
   justify-items: center;
   margin-top: 20px;
+
+  @media (max-width: 428px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 20px;
+    margin-top: 15px;
+  }
 `

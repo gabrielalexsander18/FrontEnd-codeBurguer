@@ -6,6 +6,11 @@ export const Container = styled.div`
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
   padding: 10px;
   width: max-content;
+
+  @media (max-width: 428px) {
+    width: 100vw;
+    margin-top: 20px;
+  }
 `
 
 export const Header = styled.div`
@@ -17,6 +22,14 @@ export const Header = styled.div`
   p {
     font-size: 16px;
     color: #b5b5b5;
+  }
+
+  @media (max-width: 428px) {
+    padding: 5px;
+
+    p {
+      font-size: 14px;
+    }
   }
 `
 
@@ -85,6 +98,14 @@ export const EmptyCart = styled.p`
   .container-cart {
     img {
       width: 200px;
+    }
+  }
+
+  @media (max-width: 428px) {
+    .container-cart {
+      img {
+        width: 150px;
+      }
     }
   }
 `
